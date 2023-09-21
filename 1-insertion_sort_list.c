@@ -27,6 +27,8 @@ void insertion_sort_list(listint_t **list)
 
 			/* Move 'prev' back to the previous node for further comparisons*/
 			prev = curr->prev;
+			if (prev == NULL)
+				*list = curr;
 
 			/* Print the current state of the list after each swap*/
 			print_list(*list);
