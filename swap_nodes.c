@@ -7,13 +7,10 @@
  * @prev: The previous node
  * @curr: The current node
  */
-void swap_nodes(listint_t **list, listint_t *prev, listint_t *curr)
+void swap_nodes(listint_t *prev, listint_t *curr)
 {
 	if (prev->prev)
 		prev->prev->next = curr;
-	else
-		*list = curr; /* Update the list head if 'prev' was at the beginning*/
-
 	if (curr->next)
 		curr->next->prev = prev;
 
