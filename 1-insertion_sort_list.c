@@ -1,9 +1,9 @@
 #include "sort.h"
 #include "swap_nodes.c"
 
- /**
- * insertion_sort_list - Sorts a doubly linked list of integers in
- * ascending order using the Insertion sort algorithm.
+/**
+ * insertion_sort_list - Sorts a doubly linked list of integers
+ * in ascending order.
  *
  * @list: A pointer to a pointer to the first element of the list
  */
