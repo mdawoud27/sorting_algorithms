@@ -23,7 +23,7 @@ void insertion_sort_list(listint_t **list)
 		while (prev != NULL && prev->n > curr->n)
 		{
 			/*Use the swap_nodes function to perform the swap*/
-			swap_nodes(list, prev, curr);
+			swap_nodes(prev, curr);
 
 			/* Move 'prev' back to the previous node for further comparisons*/
 			prev = curr->prev;
