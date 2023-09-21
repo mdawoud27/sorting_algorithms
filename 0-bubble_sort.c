@@ -17,11 +17,11 @@ void bubble_sort(int *array, size_t size)
 			{
 				swap(&array[j], &array[j + 1]);
 				flag = 0;
+				print_array(array, size);
 			}
 		if (flag == 1)
 			/*means that elements are already sorted. that is the best case O(N)*/
 			break;
-		print_array(array, size);
 	}
 }
 
